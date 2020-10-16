@@ -1,6 +1,7 @@
 import pyttsx3
 import PyPDF2
 
+
 # Audio function for the program
 def speak(audio):
     engine=pyttsx3.init('sapi5')
@@ -9,6 +10,7 @@ def speak(audio):
     engine.setProperty('rate',150)
     engine.say(audio)
     engine.runAndWait()
+
 
 # Function to read text from pdf
 def read(pdf_name,num):
